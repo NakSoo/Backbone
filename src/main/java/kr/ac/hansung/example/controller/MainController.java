@@ -10,4 +10,9 @@ public class MainController {
     public String getMain() {
         return "index";
     }
+
+    @RequestMapping("/events")
+    public String getEvent() {
+        return "events";
+    }
 }
