@@ -1,6 +1,7 @@
 package kr.ac.hansung.example.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -15,4 +16,10 @@ public class MainController {
     public String getEvent() {
         return "events";
     }
+
+    @RequestMapping("/models")
+    public String getModels() {return "models";}
+
+    @PostMapping("/models")
+    public String getModel() { return "models";}
 }
