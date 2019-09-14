@@ -22,4 +22,14 @@ public class MainController {
 
     @PostMapping("/models")
     public String getModel() { return "models";}
+
+    @RequestMapping("/collections")
+    public String getCollection() {
+        return "collections";
+    }
+
+    @RequestMapping("/router")
+    public String getRouter() {
+        return "routers";
+    }
 }
