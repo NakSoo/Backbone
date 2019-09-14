@@ -32,4 +32,9 @@ public class MainController {
     public String getRouter() {
         return "routers";
     }
+
+    @RequestMapping("/views")
+    public String getView() {
+        return "views";
+    }
 }
